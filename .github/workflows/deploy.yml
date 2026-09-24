@@ -33,9 +33,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: |
-          npm run build
-          cp dist/index.html dist/404.html
+        run: npm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
